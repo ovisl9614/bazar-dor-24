@@ -3,6 +3,7 @@ import { Noto_Sans_Bengali } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Marquee from "@/components/Marquee";
 
 const notoSansBengali = Noto_Sans_Bengali({
  
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
       <Header/>
+      <Marquee/>
       {/* <NavLink/> */}
         {children}
         <Footer/>
