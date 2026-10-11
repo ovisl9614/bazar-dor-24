@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Marquee from "@/components/Marquee";
 import Banner from "@/components/Banner";
+import HomeProducts from "@/components/HomeProducts";
 
 const notoSansBengali = Noto_Sans_Bengali({
  
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <Header/>
       <Marquee/>
       <Banner/>
+      <HomeProducts/>
       {/* <NavLink/> */}
         {children}
         <Footer/>
