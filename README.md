@@ -1,156 +1,82 @@
 
+# বাজার দর | BazarDor
 
+**Everyday Market Prices at a Glance**
 
-Tech Stack
-The following technologies and tools are used in this project:
+বাজার দর (BazarDor) is a web application that helps users explore the prices of everyday essential products in one place. It highlights products whose prices have increased or decreased and provides an overview of available products through a simple, responsive interface.
 
-Next.js — React framework for building a full-stack web application.
-TypeScript — Provides static typing for more reliable and maintainable code.
-Tailwind CSS — Utility-first CSS framework for styling and responsive design.
-DaisyUI — Provides reusable and customizable UI components.
-Better Auth — Handles user authentication and session management.
-MongoDB — NoSQL database for storing application data.
-Node.js & npm — Runtime environment and package management.
-Vercel — Platform for deploying and hosting the application.
-Features
-Responsive and modern user interface.
-Reusable UI components using DaisyUI.
-User authentication with Better Auth.
-MongoDB database integration.
-Type-safe development using TypeScript.
-Fast development and optimized production builds with Next.js.
-Deployment support through Vercel.
-Note: Update this list to reflect the features actually implemented in your project.
+## ✨ Key Features
 
-Getting Started
-Follow the steps below to run the project locally.
+1. **Today's Price Decreases** — Displays up to six products whose prices have decreased.
+2. **Today's Price Increases** — Displays up to six products whose prices have increased.
+3. **All Products** — Shows the available products fetched from the BazarDor API.
+4. **Product Price Details** — Displays product names, units, current prices, and price-change percentages.
+5. **Responsive Design** — Provides a user-friendly layout for mobile phones, tablets, laptops, and desktop monitors.
 
-Prerequisites
-Make sure you have installed:
+## 🛠️ Technologies Used
 
-Node.js
-npm
-Git
-A MongoDB Atlas account or another compatible MongoDB instance.
-Installation
-1. Clone the repository
+- **Next.js** — React framework for building the application.
+- **React** — Component-based user interface.
+- **TypeScript** — Type-safe JavaScript development.
+- **Tailwind CSS** — Responsive styling and layout.
+- **BazarDor Products API** — Fetches product and price information.
 
-git clone <your-github-repository-url>
-2. Navigate to the project directory
+## 🌐 API
 
-cd <your-project-folder>
-3. Install dependencies
+The application fetches product information from:
 
-npm install
-4. Configure environment variables
+```text
+https://openapi.programming-hero.com/api/bazardor/products
+```
 
-Create a .env file in the root directory of the project and configure the environment variables required by your application.
+## 🚀 Getting Started
 
-For example:
+### Prerequisites
 
-MONGODB_URI=your_mongodb_connection_string
-BETTER_AUTH_SECRET=your_auth_secret
-BETTER_AUTH_URL=http://localhost:3000
-Make sure the variable names match your actual application configuration. Generate a secure secret for Better Auth and never commit real credentials to GitHub.
+Make sure you have Node.js and npm installed.
 
-5. Run the development server
+### Installation
 
-npm run dev
-6. Open the application
+1. Clone the repository:
 
-Visit http://localhost:3000 in your browser.
+   ```bash
+   git clone YOUR_REPOSITORY_URL
+   ```
 
-Database Configuration
-This project uses MongoDB to store application data.
+2. Navigate to the project directory:
 
-To configure MongoDB:
+   ```bash
+   cd YOUR_PROJECT_FOLDER
+   ```
 
-Create a MongoDB database using MongoDB Atlas or another MongoDB deployment.
-Obtain your MongoDB connection string.
-Add the connection string to the MONGODB_URI environment variable.
-Ensure your database connection is configured correctly in the application.
-Verify that the necessary database permissions and network access settings are configured.
-The database structure and collections depend on the application's implementation.
+3. Install dependencies:
 
-Authentication
-Better Auth is used to provide authentication and session management.
+   ```bash
+   npm install
+   ```
 
-The authentication setup depends on the project's configuration and may include:
+4. Start the development server:
 
-User registration and sign-in.
-Session management.
-Protected pages or routes.
-Integration with the application's database.
-Ensure that the Better Auth configuration and required environment variables are set correctly before running the application.
+   ```bash
+   npm run dev
+   ```
 
-Available Scripts
-Run these commands from the project directory.
+5. Open the application in your browser:
 
-Command	Description
-npm run dev	Starts the development server.
-npm run build	Creates a production build.
-npm run start	Starts the production server after building.
-npm run lint	Runs the linter, if configured in package.json.
-Deployment on Vercel
-This project can be deployed using Vercel.
+   ```text
+   http://localhost:3000
+   ```
 
-Deployment Steps
-Push the project code to a GitHub repository.
-Sign in to Vercel using your GitHub account.
-Click Add New → Project.
-Import your GitHub repository.
-Configure the required environment variables in the Vercel project settings.
-Confirm the build settings and deploy the application.
-Open the generated deployment URL and verify that the application works correctly.
-Environment Variables on Vercel
-Add the environment variables required by your project in Vercel → Project Settings → Environment Variables.
+## 📱 Responsive Layout
 
-For example:
+BazarDor is designed to adapt to different screen sizes, keeping product cards, navigation, banners, and the footer usable across mobile, tablet, and desktop devices.
 
-MONGODB_URI
-BETTER_AUTH_SECRET
-BETTER_AUTH_URL
-Use the appropriate production URL for your deployed application and ensure that MongoDB permits connections from your deployment environment. Do not use example values as real credentials.
+## 📌 Project Information
 
-After changing environment variables, redeploy the application if necessary.
+- **Project Name:** বাজার দর (BazarDor)
+- **Project Type:** Market Price Information Web Application
+- **Data Source:** BazarDor Products API
 
-Project Structure
-The project follows the Next.js App Router architecture.
+---
 
-project/
-├── app/                 # Application pages and routes
-├── components/          # Reusable UI components
-├── lib/                 # Shared utilities and configurations
-├── public/              # Static assets
-├── .env                 # Local environment variables
-├── .gitignore           # Files excluded from Git
-├── package.json         # Dependencies and scripts
-├── package-lock.json    # Dependency lockfile
-└── README.md            # Project documentation
-Note: This is a sample structure. Update it to match your actual project directories.
-
-Learning Resources
-Next.js Documentation
-DaisyUI Documentation
-Better Auth Documentation
-MongoDB Documentation
-Vercel Documentation
-Author
-Your Name
-
-Developed as an assignment project using Next.js, DaisyUI, Better Auth, and MongoDB, with deployment on Vercel.
-
-Before submitting your assignment
-Replace Project Name with your actual project name.
-
-Add your name and GitHub repository URL.
-
-Update the features and project structure to match your actual implementation.
-
-Verify that the environment variable names match your code.
-
-Make sure your .env file is excluded from GitHub.
-
-Deploy to Vercel and add your live deployment URL to the README when available.
-
-One important detail: Better Auth's configuration can vary depending on your database adapter and setup. Make sure the MongoDB connection and authentication settings match your actual implementation before deploying.
+Built with ❤️ using Next.js and Tailwind CSS.
