@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Marquee from "@/components/Marquee";
+import Banner from "@/components/Banner";
 
 const notoSansBengali = Noto_Sans_Bengali({
  
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
       <Header/>
       <Marquee/>
+      <Banner/>
       {/* <NavLink/> */}
         {children}
         <Footer/>
